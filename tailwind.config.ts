@@ -12,10 +12,22 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+
+      fontFamily:{
+        yekanThin: 'yekan-thin',
+        yekanLight: 'yekan-light',
+        yekanRegular: 'yekan-regular',
+        yekanSemiBold: 'yekan-semi-bold',
+        yekanBold: 'yekan-bold',
+        yekanExtraBold: 'yekan-extra-bold',
+        yekanBlack: 'yekan-black',
+        yekanExtraBlack: 'yekan-extra-black'
+
+      }
     },
   },
   plugins: [
-    require('daisyui'),
+    require("@tailwindcss/typography"), require('daisyui'),
   ],
   daisyui: {
     themes: [

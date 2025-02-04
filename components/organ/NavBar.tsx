@@ -2,7 +2,7 @@ import React from 'react'
 
 const NavBar = () => {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 font-yekanExtraBold">
 
       <div className="flex-1">
         <a className="text-xl">دکولوکس</a>
