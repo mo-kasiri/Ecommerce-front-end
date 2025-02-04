@@ -23,9 +23,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fa" data-theme='mytheme'>
+    <html dir="rtl" lang="fa" data-theme="mytheme">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased font-yekanRegular overflow-x-hidden`}
       >
         {children}
       </body>
