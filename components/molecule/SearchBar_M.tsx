@@ -9,7 +9,7 @@ const SearchBar = () => {
   };
 
   return (
-    <label className="input flex h-[58px] items-center gap-2 rounded-xl pl-[3px] bg-[#efe5d550] border-[#efe5d5ab]">
+    <label className="input h-[58px] items-center gap-2 rounded-xl pl-[3px] bg-[#efe5d550] border-[#efe5d5ab] hidden lg:flex">
       <svg
         width="24"
         height="24"

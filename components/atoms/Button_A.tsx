@@ -9,7 +9,7 @@ interface Props {
 function Button({ children, handleClick }: Props) {
   return (
     <button
-      className="px-4 py-2.5 text-sm font-medium text-center text-white bg-primary rounded-xl hover:bg-green-800"
+      className="px-7 py-[0.75rem] ml-1 text-sm font-medium text-center text-white bg-primary rounded-2xl hover:bg-green-800"
       onClick={handleClick}
     >
       {children}

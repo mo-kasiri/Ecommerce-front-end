@@ -1,29 +1,40 @@
 import React from "react";
-import SearchBar from "../molecule/SearchBar_M";
-import ShopSVG from "../atoms/ShopCartSVG_A";
-import UserSVG from "../atoms/UserSVG_A";
+import UserSVG_A from "../atoms/UserSVG_A";
+import ShopSVG_A from "../atoms/ShopCartSVG_A";
+import NavBarMenu_O from "@/components/molecule/NavBarMenu_M";
+import SearchBar_M from "../molecule/SearchBar_M";
+import HamburgerMenu_A from "../atoms/HamburgerMenu";
 
-const NavBar = () => {
+const NavBar_O = () => {
   return (
-    <nav className="container mx-auto relative p-6 bg-white">
-      <div className=" flex-row justify-between">
-        <div className="flex items-center justify-between space-x-20 my-6">
-          <div className="flex font-yekanBold text-[32px] text-secondary">
-            دکولوکس
-          </div>
-          <div className="flex-auto pr-20">
-            <SearchBar />
-          </div>
-          <span className="flex-inital"></span>
+    <>
+      <nav className="p-6 bg-white pb-0">
+        <div className="container">
+          <div className="grid my-6 grid-cols-12">
+            <div className="col-span-4 lg:hidden">
+              <HamburgerMenu_A />
+            </div>
 
-          <div className="flex gap-6 mr-20" style={{ marginLeft: "0px" }}>
-            <ShopSVG />
-            <UserSVG />
+            <div className="col-span-4 font-yekanBold text-center text-[20px] md:text-[32px] text-secondary lg:pr-5 lg:col-span-2">
+              دکولوکس
+            </div>
+            <div className="hidden pr-20 lg:block lg:col-span-8">
+              <SearchBar_M />
+            </div>
+            <div className="col-span-4 gap-4 flex justify-end lg:py-3 ml-0 lg:col-span-2">
+              <ShopSVG_A />
+              <UserSVG_A />
+            </div>
+          </div>
+          <div className="container">
+            <NavBarMenu_O />
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+      {/* border */}
+      <div className="w-full border-b-2 border-[#EFE5D5]"></div>
+    </>
   );
 };
 
-export default NavBar;
+export default NavBar_O;

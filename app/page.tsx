@@ -1,10 +1,9 @@
-import NavBar from "@/components/organ/NavBar_O";
-import Image from "next/image";
+import NavBar_O from "@/components/organ/NavBar_O";
 
 export default function Home() {
   return (
     <>
-      <NavBar />
+      <NavBar_O />
     </>
   );
 }
