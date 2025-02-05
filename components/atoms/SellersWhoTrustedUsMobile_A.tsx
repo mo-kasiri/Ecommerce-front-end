@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 function SellersWhoTrustedUs_A() {
   return (
@@ -7,9 +8,33 @@ function SellersWhoTrustedUs_A() {
         فروشندگانی که به ما اعتماد کرده‌اند
       </p>
       <div className="grid grid-cols-12 gap-0 justify-items-center text-[16px] font-yekanRegular text-[#3A3A3A] my-1">
-        <img className="col-span-4" src="/images/baros.png" alt="" />
-        <img className="col-span-4" src="/images/hermes.png" alt="" />
-        <img className="col-span-4" src="/images/mobliran.png" alt="" />
+        <div className="col-span-4">
+          <Image
+            src="/images/baros.png"
+            alt=""
+            layout="responsive"
+            width={50}
+            height={50}
+          />
+        </div>
+        <div className="col-span-4">
+          <Image
+            src="/images/hermes.png"
+            alt=""
+            layout="responsive"
+            width={50}
+            height={50}
+          />
+        </div>
+        <div className="col-span-4">
+          <Image
+            src="/images/mobliran.png"
+            alt=""
+            layout="responsive"
+            width={50}
+            height={50}
+          />
+        </div>
       </div>
     </div>
   );

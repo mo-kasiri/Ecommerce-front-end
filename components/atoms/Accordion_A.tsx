@@ -1,3 +1,4 @@
+"use client";
 import { ReactNode, useState } from "react";
 import ArrowUpSVG_A from "./svg/ArrowUpSVG_A";
 
@@ -11,7 +12,7 @@ const Accordion_A = ({ title, isOpenInit, children }: Props) => {
   const [isOpen, setIsOpen] = useState(isOpenInit);
 
   const toggle = () => {
-    isOpen ? setIsOpen(false) : setIsOpen(true);
+    setIsOpen(!isOpen);
   };
   return (
     <div className="mb-1 container p-4">
