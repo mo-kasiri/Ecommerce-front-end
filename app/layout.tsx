@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import NavBar_O from "@/components/organ/NavBar_O";
+import Footer_O from "@/components/organ/Footer_O";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,9 +27,11 @@ export default function RootLayout({
   return (
     <html dir="rtl" lang="fa" data-theme="mytheme">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased font-yekanRegular overflow-x-hidden`}
+        className={`${geistSans.variable} ${geistMono.variable} min-h-screen antialiased font-yekanRegular overflow-x-hidden`}
       >
-        {children}
+        <NavBar_O />
+        <main className="min-h-screen">{children}</main>
+        <Footer_O />
       </body>
     </html>
   );

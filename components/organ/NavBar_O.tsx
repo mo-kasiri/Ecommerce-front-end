@@ -1,9 +1,9 @@
 import React from "react";
-import UserSVG_A from "../atoms/UserSVG_A";
-import ShopSVG_A from "../atoms/ShopCartSVG_A";
+import UserSVG_A from "../atoms/svg/UserSVG_A";
+import ShopSVG_A from "../atoms/svg/ShopCartSVG_A";
+import HamburgerMenu_A from "../atoms/svg/HamburgerMenuSVG_A";
 import NavBarMenu_O from "@/components/molecule/NavBarMenu_M";
 import SearchBar_M from "../molecule/SearchBar_M";
-import HamburgerMenu_A from "../atoms/HamburgerMenu";
 
 const NavBar_O = () => {
   return (
@@ -33,6 +33,7 @@ const NavBar_O = () => {
       </nav>
       {/* border */}
       <div className="w-full border-b-2 border-[#EFE5D5]"></div>
+      {/* border */}
     </>
   );
 };
